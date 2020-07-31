@@ -7,7 +7,7 @@
 	$usuario = $_POST['usuario'];
 	$senha =md5( $_POST['senha']);
 
-	$sql = " SELECT usuario, email FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha'";
+	$sql = " SELECT id, usuario, email FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha'";
 
 	//update true/false
 	//insert true/false
@@ -24,6 +24,7 @@
 
 		if(isset($dados_usuario['usuario'])){//Teste para verificar se houve retorno na consulta no banco de dados
 
+			$_SESSION['id_usuario'] = $dados_usuario['id'];
 			$_SESSION['usuario'] = $dados_usuario['usuario'];
 			$_SESSION['email'] = $dados_usuario['email'];
 			header('Location: home.php');

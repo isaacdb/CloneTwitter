@@ -18,6 +18,32 @@
 
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				///associar o evento de click ao botao				
+				$('#btn_tweet').click(function(){
+					
+
+					if($('#texto_tweet').val().length>0){//checa se o campo de tweet tem alguma mensagem escrita
+						
+						$.ajax({
+							url: 'inclui_tweet.php',
+							method: 'post',
+							//data: {  texto_tweet: $('#texto_tweet').val() },
+							data:$('#form_tweet').serialize(),
+							success: function(data){
+								$('#texto_tweet').val('');
+								alert('Tweet incluido com sucesso!');
+							}
+						})
+
+					}
+				});
+			});
+
+		</script>
 	
 	</head>
 
@@ -70,12 +96,12 @@
 	    	<div class="col-md-6">
 	    		<div class="panel panel-default">
 	    			<div class="panel-body">
-	    				<div class="input-group">
-	    					<input type="text" class="form-group" placeholder="Oque esta acontecendo ?" maxlength="140">
+	    				<form class="input-group" id="form_tweet">
+	    					<input name="texto_tweet" type="text" id="texto_tweet" class="form-group" placeholder="Oque esta acontecendo ?" maxlength="140">
 	    					<span class="input-group-btn">
-	    						<button class="btn btn-default" type="button">Tweet</button>
+	    						<button class="btn btn-default" id="btn_tweet" type="button">Tweet</button>
 	    					</span>	    					
-	    				</div>	    				
+	    				</form>	    				
 	    			</div>	    			
 	    		</div>
 			</div>
