@@ -46,24 +46,47 @@
 
 
 	    <div class="container">
-	    	
-	    	<br /><br />
+	    	<div class="col-md-3">
+	    		<div class="panel panel-default">
+	    			<div class="panel-body">
+	    				<h4><?= $_SESSION['usuario']?></h4>
 
-	    	<div class="col-md-4"></div>
-	    	<div class="col-md-4">
-	    		Usuario Autenticado!!!
-	    		<br>
-	    		<?= $_SESSION['usuario']?>
-	    		<br>
-	    		<?= $_SESSION['email']?>
+	    				<hr/>
+	    				<div class="col-md-6">
+	    					TWEETS <br>
+	    					1
+	    				</div>
+
+	    				<div class="col-md-6">
+	    					SEGUIDORES<br>
+	    					1
+	    				</div>
+
+
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="col-md-6">
+	    		<div class="panel panel-default">
+	    			<div class="panel-body">
+	    				<div class="input-group">
+	    					<input type="text" class="form-group" placeholder="Oque esta acontecendo ?" maxlength="140">
+	    					<span class="input-group-btn">
+	    						<button class="btn btn-default" type="button">Tweet</button>
+	    					</span>	    					
+	    				</div>	    				
+	    			</div>	    			
+	    		</div>
 			</div>
-			<div class="col-md-4"></div>
 
-			<div class="clearfix"></div>
-			<br />
-			<div class="col-md-4"></div>
-			<div class="col-md-4"></div>
-			<div class="col-md-4"></div>
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h4><a href="#">Procurar por pessoas</a></h4>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
