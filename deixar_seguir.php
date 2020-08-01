@@ -7,17 +7,16 @@
 		header('Location: index.php?erro=1');
 	}
 
-	$texto_tweet = $_POST['texto_tweet'];
 	$id_usuario = $_SESSION['id_usuario'];
+	$deixar_seguir_id_usuario = $_POST['deixar_seguir_id_usuario'];
 
-	if($texto_tweet !='' && $id_usuario != ''){
+	if($deixar_seguir_id_usuario !='' && $id_usuario != ''){
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
 
-	$sql = " INSERT INTO tweet(id_usuario, tweet)values($id_usuario, '$texto_tweet') ";
-
+	$sql = " DELETE FROM usuarios_seguidores WHERE id_usuario = $id_usuario AND seguindo_id_usuario = $deixar_seguir_id_usuario";
 	mysqli_query($link, $sql);
 
 	}

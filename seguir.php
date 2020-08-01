@@ -7,16 +7,16 @@
 		header('Location: index.php?erro=1');
 	}
 
-	$texto_tweet = $_POST['texto_tweet'];
 	$id_usuario = $_SESSION['id_usuario'];
+	$seguir_id_usuario = $_POST['seguir_id_usuario'];
 
-	if($texto_tweet !='' && $id_usuario != ''){
+	if($seguir_id_usuario !='' && $id_usuario != ''){
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
 
-	$sql = " INSERT INTO tweet(id_usuario, tweet)values($id_usuario, '$texto_tweet') ";
+	$sql = " INSERT INTO usuarios_seguidores(id_usuario, seguindo_id_usuario)values($id_usuario, $seguir_id_usuario) ";
 
 	mysqli_query($link, $sql);
 
