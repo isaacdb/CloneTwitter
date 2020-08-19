@@ -8,6 +8,9 @@
 	🚧  React Select 🚀 Finished!  🚧
 </h4>
 
+## 💻 Sobre o projeto
+
+---
 ### Features
 
 - [x] Cadastro de usuário
@@ -18,17 +21,14 @@
 - [x] Vizualizar os twetts dos follows
 - [x] Buscar novos usuarios
 
+## 🎨 Layout
+---
 <img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/feed.PNG">
-
-
+---
 <img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/busca.PNG">
-
-
+---
 <img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/inscrevase.PNG">
-
-
-
-
+---
 
 ### 🛠 Tecnologias
 
@@ -40,3 +40,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [JavaScript]
 - [MySQL]
 - [XAMPP]
+
+### Autor
+Isaac Debiasi
