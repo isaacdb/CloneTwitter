@@ -4,12 +4,12 @@
 
 <img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/index.PNG">
 
-<h4 align="center"> 
+<h4 align="right"> 
 	🚧  React Select 🚀 Finished!  🚧
 </h4>
 
 ## 💻 Sobre o projeto
-
+<p>Projeto desenvolvido com foco em por em prática os conhecimentos obitidos durante o curso Desenvolvimento WEB Completo, utilizando metodos de programação tanto em FrontEnd quanto em BackEnd.</p>
 ---
 ### Features
 
@@ -22,13 +22,13 @@
 - [x] Buscar novos usuarios
 
 ## 🎨 Layout
----
+
 <img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/feed.PNG">
----
+
 <img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/busca.PNG">
----
+
 <img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/inscrevase.PNG">
----
+
 
 ### 🛠 Tecnologias
 
