@@ -10,6 +10,7 @@
 
 ## 💻 Sobre o projeto
 <p>Projeto desenvolvido com foco em por em prática os conhecimentos obitidos durante o curso Desenvolvimento WEB Completo, utilizando metodos de programação tanto em FrontEnd quanto em BackEnd.</p>
+
 ---
 ### Features
 
